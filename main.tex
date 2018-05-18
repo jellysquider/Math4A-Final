@@ -1,0 +1,377 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{math}
+\author{geccentrical }
+\date{May 2018}
+
+% Path Packages
+\usepackage[margin=0.5in]{geometry}
+\usepackage[intlimits]{amsmath}
+\usepackage{esint}
+% Image Package + Wrap Package
+\usepackage{graphicx}
+\usepackage{wrapfig}
+% Lists & Fonts Formatting Package
+\usepackage{enumitem}
+\usepackage{xcolor}
+\graphicspath{ {images/} }
+
+\begin{document}
+S | short for solution (not ever-present as applicable)
+
+FIG | means there's supposed to be an img but it's unknown whether Professor will provide it or not
+
+
+\vspace{5mm}
+{\Large \textbf{Test 2a Questions:}}
+
+\vspace{5mm}
+\textbf{1. p.1} a) Show $\lim \limits_{x,y\to\ (0,0)} \dfrac{x^2+y^2}{\sqrt{x^2+y^2+1}-2}=2$
+
+b) Show $\lim \limits_{x,y\to (0,0)} \dfrac{xy^2}{\sqrt{x^2+y^4}}$ does not exist.
+
+\vspace{5mm}
+\textbf{2. p.2} a) Define: f(x,y) is differentiable at \((x_0,y_0)\).
+
+b)Find the tangent plane to $f(x,y) = 5x^2+y^3$ at (2,1).
+
+\vspace{5mm}
+\textbf{3. p.3} a) Let $f(x,y) = \dfrac{y^2}{\sqrt{(1+x^2)^3}}$. Find $f_x(1,3)$ and $f_y(1,3)$
+
+b) Find $f_xy(x,y)$ if $f(x,y) = e^{xy}\sin{x}$
+
+\vspace{5mm}
+\textbf{4. p.4} Write the tree and chain rule for the partial derivatives in a) and b). All functions are differentiable.
+
+a) $f_r(x(r,s),y(r,s))$
+
+b) $\dfrac{\partial f}{\partial x}$ where f depends on u,v,r. u and v depend on x,y,r. r depends on x and y.
+
+\vspace{5mm}
+\textbf{5. p.5} a) If f(x,y,z), g(x,y,z), are differentible, then show: $\nabla fg = f\nabla g + g \nabla f$
+
+b) If f(x,y,z) = $\dfrac{2}{1+x^2+2y^2+3z^2}$ find the direction of greatest increase at (-2,1,1)
+
+\vspace{5mm}
+\textbf{6. p.6} a) Define $D_uf(x_0,y_0)$, the directional derivative, in the direction of $\Vec{u} = (a,b)$ where \(a^2+b^2=1\), and f is diffentiable
+
+b) Prove: If f(x,y) is differentiable then $D_uf(x_0,y_0) = af_x(x_0,y_0) + bf_y(x_0,y_0)$ 
+
+\vspace{5mm}
+\textbf{7. p.7} Prove: If f(x,y), x(t), y(t) are differentiable, then f(x(t),y(t)) is differentiable and $$\dfrac{\partial f}{\partial t}(x(t_0),y(t_0)) = [f_x(x(t_0),y(t_0))]\dfrac{\partial x}{\partial t}(t_0)+[f_y(x(t_0),y(t_0))]\dfrac{\partial y}{\partial t}(t_0)$$
+
+
+\vspace{5mm}
+\textbf{8. p.8} Find $\dfrac{\partial f}{\partial t}$ where $f(x,y) = x^2y+3xy^4, x(t)=\ln(t)$, and $y(t) = [\sin t + \cos t]$
+
+\vspace{5mm}
+\textbf{9. p.9} Show: If $\Vec{r}(t) = <x(t),y(t)>$ is a parameterization of a level curve, f(x,y)=C, then $\nabla f(x,y) is \perp to \Vec{r'}(t)$
+
+\vspace{5mm}
+\textbf{10. p.10} Using the method of Lagrange multipliers, find the extreme values of $f(x,y) = x^2+2y^2$ subject to the contraing g(x,y) = 1, where $g(x,y)=x^2+y^2$
+
+
+\vspace{15mm}
+{\Large \textbf{All of the new stuff:}}
+
+\vspace{10mm}
+\textbf{1. p.99} Find the volume under \(16-x^2 - 2y^2\) in [0,2]x[0,2]; {\color{blue}S = 48}
+
+\vspace{5mm}
+\textbf{2. p.101} Find volume under \(z=x^3+4y\) in region between \(y=2x\) and \(y=x^2\); {\color{blue}S = $\dfrac{32}{3}$}
+
+\vspace{5mm}
+\textbf{3. p.102} a) Find \displaystyle $\iint_R 2x-y \,dA$,
+    R is bounded by $x=y^2$ and $x-y=2$; {\color{blue}S = $\dfrac{243}{20}$}
+    
+    b) Set up as Type I integral
+    
+\vspace{5mm}
+\textbf{4. p.103} a) Find (Type I / II) \displaystyle $\iint_R \dfrac{\sin(x)}{x} \,dA$,
+    R is bounded by \(x=y\) and \(x-y=2\); {\color{blue} S=$1-\cos(1)$}
+    
+\vspace{5mm}
+\textbf{5. p.104} Find Volume under $z=e^{-x^2}$ = Find \displaystyle $\iint_R \ e^{-x^2} \,dA$;  {\color{blue}S = $\dfrac{1}{2}(1-\dfrac{1}{e})$}
+
+\vspace{15mm}
+{\Large \textbf{Cylindrical (Polar) Coordinates Examples:}}
+
+% \begin{wrapfigure}[3]{l}{0.25\textwidth}
+%     \vspace{-6mm}
+%     \centering
+%     \includegraphics[width=0.25\textwidth]{7-107}
+%     \caption[placeholder]{Q 6,7}
+%     \label{fig:7-107}
+% \end{wrapfigure}
+
+\vspace{5mm}
+\textbf{6. p.106} Find \displaystyle $\iint_R \ 2x+3y \,dA$; {\color{blue} S=$\dfrac{35}{3}$}
+
+\vspace{5mm}
+\textbf{7. p.107} Set up the previous problem: \displaystyle $\iint_R (2x+3y)dA$, using Type I Region and Cartesian Coordinates
+
+% \vspace{20mm}
+% \begin{wrapfigure}[1]{l}{0.25\textwidth}
+%     \vspace{-2mm}
+%     \centering
+%     \includegraphics[width=0.25\textwidth]{8-107}
+%     \caption[placeholder]{Q 8}
+%     \label{fig:8-107}
+% \end{wrapfigure}
+
+\vspace{5mm}
+\textbf{8. p.107} Area \displaystyle $\iint_R \ 1 \,dA$,
+    Conditions: $r(\theta)=\sin(3\theta), \theta$ is from 0 to $\dfrac{\pi}{3}$;
+    {\color{blue} S=$\dfrac{\pi}{12}$}
+
+% \vspace{22mm}
+% \begin{wrapfigure}[2]{l}{0.25\textwidth}
+%     \vspace{4mm}
+%     \centering
+%     \includegraphics[width=0.25\textwidth]{9-108}
+%     \caption[placeholder]{Q 9}
+%     \label{fig:9-108}
+% \end{wrapfigure}
+
+\vspace{5mm}
+\textbf{9. p.108} a) Area {\displaystyle $\iint_R \ y \,dA$}; {\color{blue} S=$\dfrac{11}{12}$}
+
+b) Area of region R = $\int_{0}^{\dfrac{\pi}{2}} \int_{\ 1}^{\ 1+\cos(\theta)}1* \,rdr\,d\theta$
+
+\vspace{15mm}
+{\Large \textbf{Surface Area:}}
+
+\vspace{5mm}
+\textbf{10. p.110 FIG} Know the formula to calculate SA of the given cube: $$\sum \limits_{(i=1)}^m \sum \limits_{(j=1)}^n (S_{ij}) = \sum \limits_{(i=1)}^m \sum \limits_{(j=1)}^n (\Delta x \Delta y) \sqrt{f_x^2(x_i,y_j)+f_y^2(x_i,y_j)+1} = \iint \sqrt{f_x^2+f_y^2+1}$$
+
+\vspace{5mm}
+\textbf{11. p.111 FIG} Surface area of a Sphere \(x^2+y^2+z^2=9\); {\color{blue} S=$18\pi, total:36\pi$}
+
+\vspace{5mm}
+\textbf{12. p.112 FIG} Find the surface area of \(f(x,y)=9-x^2-y^2\) above the xy-plane; {\color{blue} S=$\dfrac{1}{12}[37^{\dfrac{3}{2}}-1]$}
+
+\vspace{5mm}
+\textbf{13. p.113 FIG} Surface area of Steinmetz Solid (intersection of 2 cylinders)
+
+Find the surface area of \(x^2+z^2=1\) inside of \(y^2+z^2=1\); {\color{blue} S Total=16}
+
+\vspace{15mm}
+{\Large \textbf{Density Function:}}
+    
+\vspace{5mm}
+\textbf{14. p.114 FIG} Mass of a lamina (density can vary); \(\sigma(x,y)\) = mass density; {\color{blue} S=4}
+
+m = $\iint_R \sigma(x,y) \,dA$
+
+\vspace{8mm}
+\textbf{15. p.115 FIG} Density Function; \(\sigma(x,y)\) = \(k(x^2+y^2)\); {\color{blue} S=$2\pi k$}
+
+Find $\iint_R \ k(x^2+y^2) \,dA$
+
+\vspace{5mm}
+\textbf{16. p.116 FIG} Choose Type I or Type II \(\sigma(x,y)\) = \(ky\); {\color{blue} S=$\dfrac{4}{5}k$}
+
+Find $\iint_R \ (ky) \,dA$
+
+\vspace{15mm}
+{\Large \textbf{Triple Integrals - Density, Volume}}
+
+\vspace{5mm}
+\textbf{17. p.118} \(\sigma(x,y,z)\) = \(x^2y+yz^2\)
+
+Find m = $\iiint_T \ (x^2y+yz^2) \,dV$;  {\color{blue}S = 4}
+
+\vspace{5mm}
+\textbf{18. p.119-120 FIG} T is bounded by \(y=x, z=1-x^2\), xz-plane, the xy-plane
+
+Find $\iiint_T \ z \,dV$;  {\color{blue}S = $\dfrac{1}{12}$}
+
+\vspace{5mm}
+\textbf{19. p.121} Find the Volume of a solid inside the cylinder \(x^2+y^2=1\) above the xy-plane and below \(z=\sqrt{9-x^2-y^2}\)
+
+Volume = $\iiint_T \ 1 \,dV$;  {\color{blue}S = $2\pi[9 - \dfrac{(2\sqrt{2}^3)}{3}]$}
+
+\vspace{5mm}
+\textbf{20. p.122} Evaluate $\iiint_T \ \sqrt{x^2+y^2} \,dV$, T is between $z=0, z=2-y$, inside $x^2+y^2=1$;  {\color{blue}S = $\dfrac{4\pi}{3}$}
+
+\vspace{5mm}
+\textbf{21. p.123 FIG} T is in the 1st octant bounded by xy-plane and the plane \(z=0, z=1-x-y\)  
+
+Find $\iiint_T \ z \,dV$; {\color{blue}S = $\dfrac{1}{24}$}
+
+\vspace{5mm}
+\textbf{22. p.124 FIG} T is within cylinder \(x^2+y^2=1\), below the plane \(z=4\) and above the paraboloid \(z=1-x^2-y^2\)
+
+Find $\iiint_T \ \sqrt{x^2+y^2} \,dV$; {\color{blue}S = $\dfrac{12\pi}{5}$}
+
+\vspace{5mm}
+\textbf{23. p.125 FIG} T is above xy-plane, under \(z+y=1\) and within cylinder \(y=x^2\) 
+
+Find Vol = $\iiint_T \ 1 \,dV$; {\color{blue}S = $\dfrac{8}{15}$}
+
+\vspace{5mm}
+\textbf{24. p.126 FIG} T is upper-half of a sphere of a radius a, \(x^2+y^2+z^2=a^2\)
+
+Find $\iiint_T \ z \,dV$; {\color{blue}S = $\dfrac{\pi a^4}{4}$}
+
+\vspace{5mm}
+\textbf{25. p.127 FIG} Solid T is bounded by \(z=2\) and the inside of the cone \(z=\sqrt{x^2+y^2}\)
+
+T = \( {(x,y,z) | \sqrt{x^2+y^2} \leq z \leq 2} \); {\color{blue}S = $\dfrac{8\pi}{3}$}
+
+
+\vspace{15mm}
+{\Large \textbf{Spherical Coordinates:}}
+
+\vspace{5mm}
+\textbf{26. p.129 FIG} \(x^2+y^2+z^2 \leq 1\) in 1st octant
+
+a) Set up $\iiint_T \ x \,dV$
+
+b) Evaluate $\iiint_T \ x \,dV$; {\color{blue}S = $\dfrac{\pi}{16}$}
+
+
+\vspace{5mm}
+\textbf{27. p.130 FIG} \(z=\sqrt{x^2+y^2}=r\), \(x^2+y^2+z^2=z\) | given
+
+The angle $\theta$ could be $\sqrt{3} OR \dfrac{1}{\sqrt{3}}$
+
+a) Set up $\iiint_T \ 1 \,dV$ (find Volume)
+
+b) Evaluate $\iiint_T \ 1 \,dV$; {\color{blue}S = $\dfrac{\pi}{8}$}
+
+\vspace{5mm}
+\textbf{28. p.131 FIG} Same region but integral is z
+
+Evaluate $\iiint_T \ z \,dV$; {\color{blue}S = $\dfrac{7\pi}{96}$}
+
+\vspace{5mm}
+\textbf{29. p.132 FIG} Make integral function (Set up) Volume of domain T, T = sphere of radius 2a with cylinder \( [x^2+y^2=a^2] \) removed
+
+\vspace{15mm}
+{\Large \textbf{Vector Fields:}}
+
+\vspace{5mm}
+\textbf{30. p.134 DEFINITION} a) The gradient of a scalar function is called a "conservative" vector fiend
+
+\vspace{5mm}
+b) "potential function": $\nabla f(x,y,z) = <f_x,f_y,f_z>$
+
+\vspace{10mm}
+\textbf{31. p.135 PROVE THM:} if \(<F_1, F_2, F_3>\) is a conservative vector field then $$\frac{\partial F_1}{\partial y} = \frac{\partial F_2}{\partial x}, \frac{\partial F_1}{\partial z} = \frac{\partial F_3}{\partial x}, \frac{\partial F_2}{\partial z} = \frac{\partial F_3}{\partial y}$$
+
+\vspace{5mm}
+\textbf{32. p.135} Show \(<y, 0, 0>\) is not conservative
+
+\vspace{5mm}
+\textbf{33. p.135 PROVE LEMMA} if \(<F_1, F_2>\) is conservative, then
+ $$\frac{\partial F_1}{\partial y} = \frac{\partial F_2}{\partial x}$$
+
+\vspace{5mm}
+\textbf{34. p.136 DEFINITION} The divergence of \(\Vec{F}\), denoted by \(div \Vec{F}\) or \(\nabla * \Vec{F}\)
+
+div $$\Vec{F} = \nabla * \Vec{F} = $$
+
+$$<\frac{\partial }{\partial x}, \frac{\partial }{\partial y}, \frac{\partial }{\partial z}> * <P(x,y,z), Q(x,y,z), R(x,y,z)> = $$
+
+$$ = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} = P_x, Q_y, R_z$$
+
+\vspace{5mm}
+\textbf{35. p.136 DEFINITION} The curl of \(\Vec{F}\), denoted by \(curl \Vec{F}\) \underline{or} \(\nabla \times \Vec{F}\)
+
+$$\nabla \times \Vec{F} \begin{bmatrix}
+    \Vec{i} &\Vec{j} &\Vec{k} \\
+    \frac{\partial }{\partial x}    &\frac{\partial }{\partial y}   &\frac{\partial }{\partial z}  \\
+\end{bmatrix} = \Vec{i} (\frac{\partial R}{\partial y} - \frac{\partial Q}{\partial z}) - \Vec{j}(\frac{\partial R}{\partial x} - \frac{\partial P}{\partial z})- \Vec{k}(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y})$$
+
+\vspace{5mm}
+\textbf{36. p.137} \(\Vec{F} = <xz, xy^2z, e^{2y}>\). Find \(div \Vec{F} [\nabla * \Vec{F}]\)
+
+\vspace{5mm}
+\textbf{37. p.137} Find curl of \([curl \Vec{F}] = [\nabla \times \Vec{F}]\)
+
+\vspace{5mm}
+\textbf{38. p.137 PROVE THM:} \( curl (\nabla f) = \Vec{0} ]\)
+
+\vspace{5mm}
+\textbf{39. p.138 PROVE THM:} \( div (curl \Vec{F}) = 0 \)
+
+\vspace{5mm}
+\textbf{40. p.138} \( div (\nabla{f}) = 0 \)
+
+
+\vspace{15mm}
+{\Large \textbf{Line Integrals:}}
+
+\vspace{5mm}
+\textbf{41. p.141 FIG} \(x^2+y^2=1\). Evaluate $\int_C \ (2+x^2y) \,dS$; {\color{blue}S = $2\pi + \dfrac{2}{3}$}
+
+\vspace{5mm}
+\textbf{42. p.142} Evaluate $\int_C y \sin(z) \,dS$, C is helix $<\cos(t),\sin(t),t>; 0 \leq t \leq{2\pi}$; {\color{blue}S = $\sqrt{2}\pi$}
+
+\vspace{5mm}
+\textbf{43. p.143 FIG} Evaluate $\int_{C_1} y^2dx+xdy \,dS$ if $\Vec{r_0}=<-5,-3>, \Vec{r_1}=<0,2>, x=y-y^2$
+
+\vspace{15mm}
+{\Large \textbf{Line Integrals in Vector Fields:}}
+
+\vspace{5mm}
+\textbf{44. p.145 FIG} Vector Field in \(R^2\) $\Vec{F}(x,y)=<x^2,-xy>, C=<\cos(t),\sin(t)>; 0 \leq t \leq{\dfrac{\pi}{2}}$
+
+Find $\int_C \Vec{F}*d\Vec{r}$; {\color{blue}S = $-\dfrac{2}{3}$}
+
+\vspace{5mm}
+\textbf{45. p.146} Find $\int_C \Vec{F}*d\Vec{r}$ $C=<t,t^2,t^>; 0 \leq t \leq 1$
+
+\vspace{5mm}
+\textbf{46. p.147 PROVE THM:} Fundamental Theorem for Line Integrals
+
+Let C be a \underline{smooth curve} given by $\Vec{r}(t), a\leq t \leq b$ and Let \(\nabla f\) be continuous where t is a function of x,y,z; Then:
+
+$$\int_C \nabla f * d\Vec{r} = f(\Vec{r}(b)) - f(\Vec{r}(a)))$$
+
+\vspace{5mm}
+\textbf{47. p.147} $\Vec{F}(x,y)=<2xy,1+x^2-y^2>$
+
+\vspace{5mm}
+\textbf{48. p.148} a) Is this a conservative vector field? $\Vec{F}(x,y,z)=<2xyz^2,x^2z^2,2x^2yz>$
+
+b) Find Potential Function for $\Vec{F}(x,y,z)$
+
+\vspace{5mm}
+\textbf{49. p.149} a) Show F is conservative: $\Vec{F}(x,y,z)=<y^2,2xy+e^{3z},3ye^{3z}>$
+
+b) Find Potential Function for $\Vec{F}(x,y,z)$
+
+\vspace{15mm}
+{\Large \textbf{50. p.150-152 FIG. PROVE Green's Theorem:}}
+
+Let $\Vec{F(x,y)} = <P(x,y), Q(x,y)>$ be a Vector Field defined in a region R of the xy-plane. The boundary of R [dR] is a simple closed curve C. If \(\Vec{r(t)}\) is a parametrization of C \underline{in the counter-clockwise direction}, then
+
+$$ \oint \Vec{F}(x,y) * d\Vec{r} = \int_C \ P(x,y)dx + Q(x,y)dy = \iint_R (curl) dA \xrightarrow{} \iint_R \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \,dA $$
+
+\vspace{5mm}
+a) Show $ \int_C \ P(x,y)dx = \iint_R - \frac{\partial P}{\partial y} \,dA$
+
+\vspace{5mm}
+b) Show $ \int_C \ Q(x,y)dy = \iint_R \frac{\partial Q}{\partial x} \,dA$
+
+\vspace{5mm}
+\textbf{51. p.153 FIG} Find $ \oint_C (x^2y)dx + (x)dy $
+
+\vspace{5mm}
+\textbf{52. p.154} \(\Vec{F(x,y} = <e^x-y^3, \cos{y} + x^3>\)
+
+
+Find Total Work = $\oint_C \Vec{F} * d\Vec{r}$; {\color{blue}S = $\dfrac{3}{2}\pi$}
+
+\vspace{5mm}
+\textbf{53. p.155} $ \oint_C (3y-e^{\sin x})dx + (7x+\sqrt{y^4+1})dy $; {\color{blue}S = $36\pi$}
+
+\vspace{5mm}
+\textbf{Using Green's thm to find area if R is \underline{simply connected:}}
+
+\vspace{5mm}
+\textbf{54. p.156} Find Area of an ellipse $ A = \iint_R \ 1 \,dA = \iint_R \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \,dA = \oint_C Pdx + Qdy$; {\color{blue}S = $\pi ab$}
+\end{document}
